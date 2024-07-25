@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}Maximiliano Eaton{% endblock %}
+
+{% block content %}
+<div class="columns" style="grid-template-columns: 5fr 3fr;">
+    <div class="column">
+        <h1>
+            About Me
+        </h1>
+        <p>
+            I am pursuing a double major in Computer Science and Applied Mathematics at the University of Colorado Boulder. 
+            My interest in computer science ranges from theoretical computer science to computer architecture, with an underlying focus in optimization. 
+            I enjoy finding solutions to problems from both an algorithmic and architectural perspective to improve efficiency. 
+        </p>
+        <p>
+            In my free time I like to swim, do crafts, and play board games. 
+            The current game that I am really into is <a href="https://boardgamegeek.com/boardgame/237182/root" style="color: inherit;">Root</a>. 
+        </p>
+    </div>
+    <div class="column">
+        <img src="{{ url_for('static', filename='files/profile.jpg') }}" alt="LinkedIn">
+    </div>
+</div>
+{% endblock %}
