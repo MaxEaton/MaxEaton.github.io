@@ -65,7 +65,8 @@ header {
 }
 
 .columns {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     gap: 1em;
 }
 
@@ -76,3 +77,30 @@ header {
     display: block;
 }
 
+#aboutme {
+    display: flex;
+    gap: 1em;
+}
+
+#aboutme > div {
+    flex: 1;
+}
+
+.navbar-left a::before {
+    content: "Maximiliano Eaton";
+}
+
+@media (max-width: 45em) {
+    .columns {
+        flex-direction: column;
+    }
+    .navbar-left a::before {
+        content: "M.E.";
+    }
+}
+
+@media (max-width: 30em) {
+    .nonessential {
+        display: none;
+    }
+}

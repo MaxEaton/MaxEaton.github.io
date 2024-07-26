@@ -3,7 +3,7 @@
 {% block title %}Maximiliano Eaton{% endblock %}
 
 {% block content %}
-<div class="columns" style="grid-template-columns: 5fr 3fr;">
+<div class="columns" id="aboutme">
     <div class="column">
         <h1>
             About Me
@@ -18,7 +18,7 @@
             The current game that I am really into is <a href="https://boardgamegeek.com/boardgame/237182/root" style="color: inherit;">Root</a>. 
         </p>
     </div>
-    <div class="column">
+    <div class="column" id="profilepic">
         <img src="{{ url_for('static', filename='files/profile.jpg') }}" alt="LinkedIn">
     </div>
 </div>
