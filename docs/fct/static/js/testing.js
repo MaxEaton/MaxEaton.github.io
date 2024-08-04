@@ -1,0 +1,1 @@
+['next1', 'next2', 'next3'].forEach(next => console.log(next));
