@@ -66,6 +66,7 @@ header {
 
 .columns {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     gap: 1em;
     padding: 0;
