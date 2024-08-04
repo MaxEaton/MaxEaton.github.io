@@ -1,6 +1,8 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, Blueprint
+from fct import fct_blueprint
 
 app = Flask(__name__)
+app.register_blueprint(fct_blueprint, url_prefix='/fct')
 
 @app.route('/')
 def home():

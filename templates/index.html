@@ -3,8 +3,8 @@
 {% block title %}Maximiliano Eaton{% endblock %}
 
 {% block content %}
-<div class="columns" id="aboutme">
-    <div class="column">
+<div class="columns">
+    <div class="column" id="aboutme">
         <h1>
             About Me
         </h1>
@@ -17,9 +17,16 @@
             In my free time I like to swim, do crafts, and play board games. 
             The current game that I am really into is <a href="https://boardgamegeek.com/boardgame/237182/root" style="color: inherit;">Root</a>. 
         </p>
+        <p>
+            Check out my recent Four Color Theorem project <a href="/fct/" style="color: inherit;">here</a>. 
+        </p>
     </div>
     <div class="column" id="profilepic">
         <img src="{{ url_for('static', filename='files/profile.jpg') }}" alt="LinkedIn">
     </div>
 </div>
+<h1>
+    Resume
+</h1>
+<iframe src="{{ url_for('static', filename='files/MaxEatonResume.pdf') }}" width="100%" height="100%"></iframe>
 {% endblock %}

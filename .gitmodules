@@ -1,0 +1,3 @@
+[submodule "fct"]
+	path = fct
+	url = git@github.com:MaxEaton/FourColorTheorem.git
